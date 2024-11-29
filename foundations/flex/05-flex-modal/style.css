@@ -20,7 +20,46 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 10px;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  /* display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4,1fr); */
 }
+.box1{
+  gap:3rem;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+}
+.text{
+  margin-bottom: 16px;
+}
+
+/* make this with grid */
+/* .header{
+  font-weight: bold;
+  grid-column: span 2;
+}
+.text{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+}
+.continue{
+  grid-row-start: 3;
+  grid-column: 2 ;
+}
+.cancel{
+  grid-row-start: 3;
+  grid-column: 3;
+} */
 
 .icon {
   color: royalblue;
@@ -33,6 +72,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -60,6 +100,7 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  
 }
 
 button.cancel {
@@ -67,3 +108,22 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* .top-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.middle-dection{
+
+}
+.bottom-section{
+  display:flex ;
+  justify-content: center;
+  gap: 5px;
+}
+.header{
+  font-weight: bold;
+  font-size: 1.2rem;
+} */
